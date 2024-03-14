@@ -40,3 +40,50 @@ ul li:hover {
     cursor: pointer;
     color: orangered;
 }
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    border-top-style: solid;
+    border-color: grey;
+}
+.f{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 70%;
+    color: orangered;
+    font-size: larger;
+    font-weight: bold;
+}
+.footermain{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.footerleft{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    justify-content: center;
+    font-size: 15px;
+}
+.footerright{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: flex-end;
+}
+.footercenter{
+    align-items: flex-start;
+}
+.fotofooter{
+    display: flex;
+    justify-content: space-evenly;
+}

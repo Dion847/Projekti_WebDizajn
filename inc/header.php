@@ -12,6 +12,13 @@
             <li><a style="text-decoration:none; color: black;" href="Menu.php">Menu</a></li>
             <li><a style="text-decoration:none; color: black;" href="aboutus.php">About Us</a></li>
             <li><a style="text-decoration:none; color: black;" href="contactus.php">Contact Us</a></li>
-            <li><a style="text-decoration:none; color: black;" href="login.php">Log In</a></li>
+
+            <?php
+                if (isset($_SESSION['id'])) {
+                    echo "<li><a href='logout.php'>Log Out</a></li>";
+                } else {
+                    ?>
+                    <li><a style="text-decoration:none; color: black;" href="login.php">Log In</a></li>
+            <?php } ?>
         </ul>
 </header>

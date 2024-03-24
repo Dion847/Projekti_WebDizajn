@@ -28,6 +28,20 @@
             }
             window.onload = changeImg;
         </script>
+        <br>
+        <br>
+        <h1>Our Best Selling Burgers</h1>
+        <br>
+        <div class="fotografit">
+        <?php 
+            foreach ($allFood as $food) {
+                echo "<img src='Css/Fotot/" . $food->getImage() . "' width='350px' height='300px'>";
+            }
+        ?>
+        </div>
+        <br>
+        <br>
+        <br>
     </main>
     <?php include("Footer.php");?>
 </body>

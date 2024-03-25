@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <link rel="stylesheet" href="Css/Style.css">
 <title>Flavor Haven Restaurant</title>
 <header>
@@ -11,7 +15,7 @@
             <li><a style="text-decoration:none; color: black;" href="News.php">News</a></li>
             <li><a style="text-decoration:none; color: black;" href="Menu.php">Menu</a></li>
             <li><a style="text-decoration:none; color: black;" href="aboutus.php">About Us</a></li>
-            <li><a style="text-decoration:none; color: black;" href="contactus.php">Contact Us</a></li>
+            <li><a style="text-decoration:none; color: black;" href="contact.php">Contact Us</a></li>
 
             <?php
                 if (isset($_SESSION['id'])) {

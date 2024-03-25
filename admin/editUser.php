@@ -22,7 +22,7 @@ if (isset($_POST['edit'])) {
         echo "<script>alert('Succesfully edited account!')</script>";
         header('Location:user.php');
     } else {
-        echo "<script>alert('Edting user failed!')</script>";
+        echo "<script>alert('Editing user failed!')</script>";
     }
 }
 
@@ -31,20 +31,17 @@ if (isset($_POST['edit'])) {
     <div class="registerBox">
         <h1>Edit User</h1>
         <form method="post" id="signupForm">
-            <!-- <label for="name">Name</label> -->
+
             <input type="text" name="name" id="name" placeholder="Name" required value="<?php if (!empty($user->getName())) {
                 echo $user->getName();
             } ?>">
             <div id="errorName" style="color: red;"></div>
 
-            <!-- <label for="email">Email</label> -->
             <input type="email" name="email" id="email" placeholder="Email" required value="<?php if (!empty($user->getEmail())) {
                 echo $user->getEmail();
             } ?>">
             <div id="errorEmail" style="color: red;"></div>
 
-
-            <!-- <label for="password">Password</label> -->
             <input type="password" name="password" id="password" placeholder="Password" required>
             <div id="errorPassword" style="color: red;"></div>
 

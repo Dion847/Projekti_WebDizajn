@@ -6,8 +6,6 @@ use PDO;
 
 class User extends Database
 {
-
-    
     private $id;
     private $name;
     private $email;
@@ -89,8 +87,6 @@ class User extends Database
         return true;
     }
 
-
-
     public function updateUser()
     {
         $id = $this->getId();
@@ -104,7 +100,6 @@ class User extends Database
         return true;
     }
 
-
     public function deleteUser()
     {
         $id = $this->getId();
@@ -113,9 +108,6 @@ class User extends Database
         $stmt->execute([$id]);
         return true;
     }
-
-
-
 
     public function verifyUser($email, $password)
     {
@@ -128,8 +120,5 @@ class User extends Database
         $stmt->setFetchMode(PDO::FETCH_CLASS, __NAMESPACE__ . "\\User");
         return $stmt->fetch();
     }
-
-
 }
-
 ?>

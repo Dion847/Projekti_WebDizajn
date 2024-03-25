@@ -23,11 +23,10 @@ if (isset($_POST['create']) && $_FILES['image']) {
     <div class="registerBox">
         <h1>Create Food</h1>
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" id="signupForm" enctype="multipart/form-data">
-            <!-- <label for="title">Title</label> -->
+
             <input type="text" name="title" title="title" id="title" placeholder="Title" required>
             <div id="errorTitle" style="color: red;"></div>
 
-            <!-- <label for="description">Description</label> -->
             <input type="text" title="description" name="description" id="description" placeholder="Description" required>
             <div id="errorDescription" style="color: red;"></div>
 

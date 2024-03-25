@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
         $_SESSION['email'] = $user->getEmail();
         $_SESSION['role'] = $user->getRole();
 
-        if ($_SESSION['role'] == 'admin' || $_SESSION['role'] == 'staff') {
+        if ($_SESSION['role'] == 'admin' || $_SESSION['role'] == 'staf') {
             header('Location:admin/user.php');
         } else if ($_SESSION['role'] == 'user') {
             header('Location:index.php');
@@ -41,12 +41,9 @@ if (isset($_POST['login'])) {
         <h1>Log In</h1>
         <form action="" id="loginForm" method="post">
 
-            <!-- <label for="email">Email</label> -->
             <input type="email" name="email" id="email" placeholder="Email" required>
             <div id="errorEmail" style="color: red;"></div>
 
-
-            <!-- <label for="password">Password</label> -->
             <input type="password" name="password" id="password" placeholder="Password" required>
             <div id="errorPassword" style="color: red;"></div>
 

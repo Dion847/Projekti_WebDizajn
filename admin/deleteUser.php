@@ -28,20 +28,17 @@ if (isset($_POST['delete'])) {
     <div class="registerBox">
         <h1>Edit User</h1>
         <form method="post" id="signupForm">
-            <!-- <label for="name">Name</label> -->
+
             <input type="text" name="name" id="name" placeholder="Name" disabled value="<?php if (!empty($user->getName())) {
                 echo $user->getName();
             } ?>">
             <div id="errorName" style="color: red;"></div>
 
-            <!-- <label for="email">Email</label> -->
             <input type="email" name="email" id="email" placeholder="Email" disabled value="<?php if (!empty($user->getEmail())) {
                 echo $user->getEmail();
             } ?>">
             <div id="errorEmail" style="color: red;"></div>
 
-
-            <!-- <label for="password">Password</label> -->
             <input type="password" name="password" id="password" placeholder="Password" disabled value="<?php if (!empty($user->getPassword())) {
                 echo $user->getPassword();
             } ?>">

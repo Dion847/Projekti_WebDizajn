@@ -1,15 +1,14 @@
 <?php
-
+namespace Amin\Lib;
 
 use PDO, PDOException;
-
 
 abstract class Database
 {
     private $server = "localhost";
     private $user = "root";
     private $password = "";
-    private $db = "RestaurantFH";
+    private $db = "restaurantfh";
 
     public function connectDB()
     {

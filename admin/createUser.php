@@ -28,16 +28,13 @@ if (isset($_POST['create'])) {
     <div class="registerBox">
         <h1>Create User</h1>
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" id="signupForm">
-            <!-- <label for="name">Name</label> -->
+
             <input type="text" name="name" id="name" placeholder="Name" required>
             <div id="errorName" style="color: red;"></div>
 
-            <!-- <label for="email">Email</label> -->
             <input type="email" name="email" id="email" placeholder="Email" required>
             <div id="errorEmail" style="color: red;"></div>
 
-
-            <!-- <label for="password">Password</label> -->
             <input type="password" name="password" id="password" placeholder="Password" required>
             <div id="errorPassword" style="color: red;"></div>
 
@@ -47,7 +44,6 @@ if (isset($_POST['create'])) {
                 <option value="staf">Staf</option>
                 <option value="user">User</option>
             </select>
-
 
             <input type="submit" value="Create" name="create" class="btn" onclick="signupValidation()">
         </form>

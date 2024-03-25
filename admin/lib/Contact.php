@@ -6,12 +6,9 @@ use PDO;
 
 class Contact extends Database
 {
-
-    
     private $id;
     private $email;
     private $message;
-
 
     function getId()
     {
@@ -64,8 +61,6 @@ class Contact extends Database
         return true;
     }
 
-
-
     public function updateContact()
     {
         $id = $this->getId();
@@ -77,7 +72,6 @@ class Contact extends Database
         return true;
     }
 
-
     public function deleteContact()
     {
         $id = $this->getId();
@@ -87,5 +81,4 @@ class Contact extends Database
         return true;
     }
 }
-
 ?>

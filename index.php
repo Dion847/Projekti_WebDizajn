@@ -1,4 +1,10 @@
-<?php include("header.php");?>
+<?php include("header.php");
+use Admin\Lib\Food;
+include 'admin/lib/Food.php';
+
+$allFood = new Food();
+$allFood = $allFood->getAllFood();
+?>
     <title>Flavor Haven Restaurant</title>
     <link rel="stylesheet" href="Css/Style.css">
 </head>

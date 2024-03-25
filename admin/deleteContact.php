@@ -25,13 +25,12 @@ if (isset($_POST['delete'])) {
     <div class="registerBox">
         <h1>Delete Contact</h1>
         <form method="post" id="signupForm" enctype="multipart/form-data">
-            <!-- <label for="title">Title</label> -->
+
             <input type="text" title="email" id="email" name="email" placeholder="Email" disabled  value="<?php if (!empty($contact->getEmail())) {
                 echo $contact->getEmail();
             } ?>">
             <div id="errorTitle" style="color: red;"></div>
 
-            <!-- <label for="description">Description</label> -->
             <input type="text" title="message" name="message" id="message" disabled placeholder="Message"  value="<?php if (!empty($contact->getMessage())) {
                 echo $contact->getMessage();
             } ?>">

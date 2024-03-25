@@ -49,8 +49,6 @@ function signupValidation() {
 
     errorConfirmPassword.innerText = "";
 
-
-    // alert("Jeni regjistruar me sukses");
 }
 
 function loginValidation() {
@@ -75,7 +73,6 @@ function loginValidation() {
         return false;
     }
     errorPassword.innerText = "";
-    // alert("Jeni kyqur me sukses");
 }
 
 function contactValidation() {
@@ -93,7 +90,6 @@ function contactValidation() {
     }
     errorEmail.innerText = "";
 
-    // var descriptionRegex = /^[A-Z][a-z]+(\d{3})$/;
     if (description.value == "") {
         errorDescription.innerText = "Write a description";
         event.preventDefault();

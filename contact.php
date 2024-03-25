@@ -1,5 +1,6 @@
 <?php 
 include("inc/header.php");
+include_once 'admin/lib/Contact/php';
 
 if(isset($_POST['submit'])){
     $contact = new Admin\Lib\Contact();
@@ -19,12 +20,10 @@ if(isset($_POST['submit'])){
         <h1>Contact Us</h1>
         <form action="" method="post">
 
-            <!-- <label for="email">Email</label> -->
             <input type="email" name="email" id="email" placeholder="Email" value="<?php if (!empty($_SESSION['email'])) {
                 echo $_SESSION['email'];
             } ?>" required>
             <div id="errorEmail" class="error"></div>
-            <!-- <label for="password">Password</label> -->
             <input type="text" name="message" id="message" placeholder="Contact Us!" required>
             <div id="errorDescription" class="error"></div>
 

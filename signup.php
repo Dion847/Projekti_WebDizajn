@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-<link rel="stylesheet" href="Css/SignupForm">
+<link rel="stylesheet" href="Css/SignupForm.css">
 <div class="container">
     <div class="registerBox">
         <h1>Sign up</h1>

@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <link rel="stylesheet" href="Style.css">
 <title>Flavor Haven Restaurant</title>
 <footer>

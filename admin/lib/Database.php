@@ -1,5 +1,5 @@
 <?php
-namespace Amin\Lib;
+namespace Admin\Lib;
 
 use PDO, PDOException;
 

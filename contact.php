@@ -1,6 +1,6 @@
 <?php 
 include("inc/header.php");
-include_once 'admin/lib/Contact/php';
+include_once 'admin/lib/Contact.php';
 
 if(isset($_POST['submit'])){
     $contact = new Admin\Lib\Contact();
@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
-<link rel="stylesheet" href="Css/contactForm">
+<link rel="stylesheet" href="Css/contactForm.css">
 <div class="container">
     <div class="contactBox">
         <h1>Contact Us</h1>

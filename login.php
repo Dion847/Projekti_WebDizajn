@@ -34,7 +34,7 @@ if (isset($_POST['login'])) {
 }
 
 ?>
-<link rel="stylesheet" href="Css/LoginForm">
+<link rel="stylesheet" href="Css/LoginForm.css">
 
 <div class="container">
     <div class="loginBox">

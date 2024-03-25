@@ -1,4 +1,4 @@
-<?php include("header.php");
+<?php include("inc/header.php");
 use Admin\Lib\Food;
 include 'admin/lib/Food.php';
 
@@ -49,7 +49,7 @@ $allFood = $allFood->getAllFood();
         <br>
         <br>
     </main>
-    <?php include("Footer.php");?>
+    <?php include("inc/Footer.php");?>
 </body>
 
 </html>

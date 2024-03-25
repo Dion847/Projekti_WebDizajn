@@ -1,4 +1,4 @@
-<?php include("header.php");?>
+<?php include("inc/header.php");?>
 <link rel="stylesheet" href="Css/Style.css">
 <main>
 <h1>Menu</h1>
@@ -41,4 +41,4 @@
             </div>
         </div>
         </main>
-        <?php include("Footer.php");?>
+        <?php include("inc/Footer.php");?>
